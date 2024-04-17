@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+ height: 100vh;
+ background-image: linear-gradient(green, purple,orange );
+    display: flex;
+   
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    
+    width: 400px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    
+    
+}
+header{
+    border-bottom: 1px solid black;
+    color: rgba(131, 125, 125, 0.637);
+}
+#Inputfield{
+    margin-top: 10px;
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+#GenrateButton{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    left: 130px;
+    height: 30px;
+    width: 110px;
+    border-radius: 10px;
+    background-color: rgba(250, 223, 187, 0.838);
+    color: rgba(10, 123, 236, 0.838);
+    font-weight: bolder;
+    font-size: x-large;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+#GenrateButton:hover{
+    background-image: linear-gradient(red,orange);
+}
+#imgbox{
+    width: 200px;
+    max-height: 0;
+    margin-left: 110px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    border-radius: 10px;
+}
+#imgbox.showimage{
+    max-height: 300px;
+    border: 1 px solid #d1d1d1;
+}
+
+.error{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
